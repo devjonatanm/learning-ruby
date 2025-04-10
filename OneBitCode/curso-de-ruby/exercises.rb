@@ -1,14 +1,24 @@
 # Exercício 1: Saudação Personalizada
-# Peça ao usuário para digitar seu nome.
+# Peça ao usuário para digitar seu nome. 
 # Utilize os comandos print e puts para exibir uma mensagem de saudação personalizada,
 # como "Olá, [nome do usuário]!". Experimente usar ambas as formas de saída.
-
+puts "Digite seu nome: "
+nome = gets.chomp
+puts "Olá, #{nome}!"
+print "Olá, #{nome}!"
+print "\nOlá, #{nome}!"
 
 # Exercício 2: Informações de um Produto
 # Crie três variáveis: nome_produto (string), preco_produto (float) e disponivel (booleano).
 # Atribua valores a essas variáveis (por exemplo, "Camiseta", 29.90, true).
 # Exiba essas informações utilizando puts, formatando a saída para ser clara e legível.
-
+puts "Qual o nome do pruduto?: "
+nome_produto = gets.chomp
+puts "Qual o preço do produto?: "
+preco_produto = gets.chomp
+puts "Este produto está disponível?(SIM/NÃO): "
+disponivel = gets.chomp
+puts "#{nome_produto}, #{preco_produto}, #{disponivel=="SIM"?true:false}"
 
 # Exercício 3: Calculadora de Área
 # Peça ao usuário para digitar a largura e a altura de um retângulo.
