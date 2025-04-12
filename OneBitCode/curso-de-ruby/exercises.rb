@@ -82,7 +82,10 @@ puts texto
 # Leia a entrada e converta-a para um número float.
 # Calcule a temperatura equivalente em Fahrenheit (F = (C * 9/5) + 32).
 # Exiba ambas as temperaturas utilizando interpolação de strings.
-
+puts "Qual a temperatura atual em C°: "
+temperatura = gets.chomp.to_f
+fahrenheit = (temperatura * 9/5) + 32
+puts "A temperatura de #{temperatura}C° é de #{fahrenheit}F°"
 
 # Exercício 9: Jogo de Adivinhação Simples
 # Gere um número secreto aleatório (você pode fixar um valor para simplificar).
@@ -90,10 +93,26 @@ puts texto
 # Leia a entrada do usuário e converta-a para um inteiro.
 # Exiba uma mensagem informando o número digitado pelo usuário.
 # (Não precisa verificar se acertou ainda, o foco é entrada e saída).
-
+puts "Digite um número de 1 a 10: "
+numero = gets.chomp.to_i
+if numero == rand(1..10)
+  puts "Acertou o numero!!"
+else
+  puts "Errou o numero sorteado"
+end
 
 # Exercício 10: Formulário Básico
 # Peça ao usuário para digitar seu nome, idade e cidade.
 # Utilize múltiplos comandos puts e gets.chomp para coletar essas informações.
 # Exiba as informações coletadas em um formato de "ficha" utilizando a sintaxe de string multilinha.
+puts "Seu nome: "
+nome = gets.chomp
+puts "Sua idade: "
+idade = gets.chomp
+puts "Cidade onde mora: "
+cidade = gets.chomp
 
+ficha = <<-OK
+  FICHA: #{nome}, #{idade} anos, cidade de #{cidade}.
+OK
+puts ficha
