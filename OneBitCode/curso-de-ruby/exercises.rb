@@ -25,29 +25,57 @@ puts "#{nome_produto}, #{preco_produto}, #{disponivel=="SIM"?true:false}"
 # Leia as entradas do usuário e converta-as para números inteiros utilizando .to_i.
 # Calcule a área do retângulo (largura * altura).
 # Exiba o resultado utilizando interpolação de strings (#{}).
-
+puts "Digite a altura: "
+altura = gets.chomp.to_i
+puts "Digite a largura: "
+largura = gets.chomp.to_i
+puts "A área é: #{altura*largura}"
 
 # Exercício 4: Verificação de Tipo
 # Crie variáveis com diferentes tipos de dados (string, integer, float, boolean).
 # Utilize o método .class para exibir o tipo de cada variável.
-
+nome = "Jonatan"
+idade = 30
+altura = 1.76
+saudavel = true
+puts nome.class
+puts idade.class
+puts altura.class
+puts saudavel.class
 
 # Exercício 5: Entrada e Saída Combinadas
 # Peça ao usuário para digitar sua cor favorita.
 # Leia a entrada do usuário.
 # Exiba uma mensagem combinando um texto fixo com a cor digitada pelo usuário, utilizando concatenação (+).
-
+puts "Qual é sua cor favorita?: "
+cor = gets.chomp
+puts "Minha cor favorita é "+cor+", não gosto muito de cores derivadas do vermelho/amarelo, por mais que o roxo tenha vermelho ainda me lembra mais azul ..."
 
 # Exercício 6: Informações de um Filme (Entrada do Usuário)
 # Peça ao usuário para digitar o título de um filme, o ano de lançamento e a sua avaliação (um número decimal).
 # Armazene essas informações em variáveis com os tipos de dados apropriados.
 # Exiba essas informações utilizando um único puts com interpolação de strings, formatando a saída em uma frase.
-
+puts "Nome do filme: "
+nomFilm = gets.chomp
+puts "Ano de lançamento: "
+anoLancamento = gets.chomp
+puts "Sua avaliação: "
+avaliacao = gets.chomp
+puts nomFilm, anoLancamento, avaliacao
 
 # Exercício 7: Mensagem Multilinha
 # Utilize a sintaxe de string multilinha (<<~ ou <<- ou <<) para exibir uma mensagem formatada
 # contendo o nome de um evento, a data e o local. Peça ao usuário para fornecer essas informações.
-
+puts "Nome do evento: "
+evento = gets.chomp
+puts "Qual a data: "
+data = gets.chomp
+puts "Qual o local "
+local = gets.chomp
+texto = <<~TEXTO
+  #{evento}, #{data}, #{local}
+TEXTO
+puts texto
 
 # Exercício 8: Conversão de Temperatura
 # Peça ao usuário para digitar uma temperatura em graus Celsius.
