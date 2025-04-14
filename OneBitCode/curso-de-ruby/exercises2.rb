@@ -9,6 +9,14 @@
 # Calcule `num1` elevado à potência de `num2`.
 # Exiba o resultado de cada operação com uma mensagem descritiva.
 # Exemplo de saída: "A soma é: ..."
+num1 = 6
+num2 = 3
+puts "A soma é: #{num1 + num2}"
+puts "A diferença é: #{num1 - num2}"
+puts "A produto é: #{num1 * num2}"
+puts "A quociente é: #{num1 / num2}"
+puts "O resto da divisão é: #{num1 % num2}"
+puts "`num1` elevado à potência de `num2` é: #{num1 ** 2}"
 
 # 2° EXERCÍCIO: Operadores de Atribuição
 # Declare uma variável chamada `contador` e inicialize-a com o valor 20.
@@ -17,12 +25,26 @@
 # Utilize o operador de atribuição de multiplicação (*=) para multiplicar o `contador` por 3.
 # Utilize o operador de atribuição de divisão (/=) para dividir o `contador` por 4.
 # Exiba o valor do `contador` após cada operação com uma mensagem clara.
+contador = 20
+puts contador
+contador += 5
+puts "adição de 5 = #{contador}"
+contador -= 8
+puts "subtração de 8 = #{contador}"
+contador *= 3
+puts "multiplicação de 3 = #{contador}"
+contador /= 4
+puts "divisão de 4 = #{contador}"
 
 # 3° EXERCÍCIO: Atribuição Paralela
 # Em uma única linha de código, atribua os valores 10 à variável `primeiro_valor`
 # e a string "Olá" à variável `segunda_mensagem`.
 # Em seguida, utilize a atribuição paralela para trocar os valores das duas variáveis.
 # Exiba o valor de `primeiro_valor` e `segunda_mensagem` após a troca.
+primeiro_valor = 10
+segunda_mensagem = "Olá"
+primeiro_valor, segunda_mensagem = "Olá", 10
+puts primeiro_valor,segunda_mensagem
 
 # 4° EXERCÍCIO: Operadores de Comparação
 # Crie duas variáveis, `idade1` com o valor 25 e `idade2` com o valor 30.
@@ -32,6 +54,12 @@
 # Compare se `idade1` é diferente de `idade2` e exiba o resultado.
 # Compare se `idade1` é maior ou igual a `idade2` e exiba o resultado.
 # Compare se `idade1` é menor ou igual a `idade2` e exiba o resultado.
+idade1 = 25
+idade2 = 30
+puts idade1 > idade2
+puts idade1 < idade2
+puts idade1 >= idade2
+puts idade1 <= idade2
 
 # 5° EXERCÍCIO: Operadores Lógicos
 # Avalie a seguinte expressão lógica utilizando o operador `and`:
@@ -40,6 +68,10 @@
 # Avalie a seguinte expressão lógica utilizando o operador `or`:
 # ("sol" == "lua") ou (7 < 9)
 # Armazene o resultado em outra variável e exiba-o.
+firstTest = (15 > 10) and (5 == 5)
+puts firstTest
+secondTest = ("sol" == "lua") or (7 < 9)
+puts secondTest
 
 # 6° EXERCÍCIO: Operador de Intervalo (to_a)
 # Crie um intervalo de números inteiros de 2 a 7.
