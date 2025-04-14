@@ -80,6 +80,8 @@ puts secondTest
 # Crie um intervalo de letras minúsculas de 'a' a 'd'.
 # Utilize o método `to_a` para converter este intervalo em um array.
 # Exiba o array resultante.
+print (2..7).to_a
+print ('a'..'d').to_a
 
 # 7° EXERCÍCIO: Precedência de Operadores
 # Considere a expressão: 5 + 2 * 4. Sem executar o código, qual será o resultado?
@@ -87,6 +89,8 @@ puts secondTest
 # Agora, escreva a mesma expressão utilizando parênteses para forçar a adição a ser
 # realizada primeiro: (5 + 2) * 4. Qual será o resultado?
 # Escreva um comentário explicando a diferença.
+puts 5 + 2 * 4 # nesta linha execução está sendo esquerda para direita
+puts (5 + 2) * 4 # nesta execução esta cumplindo regras matematica, primeiro o que há dentro dos parenteses com prioridade
 
 # 8° EXERCÍCIO: Operador de Concatenação (<<) em Strings
 # Declare uma variável string vazia chamada `frase_completa`.
@@ -95,6 +99,12 @@ puts secondTest
 # Utilize o operador `<<` para adicionar a palavra "Ruby" à `frase_completa`.
 # Utilize o operador `<<` para adicionar o caractere "!" à `frase_completa`.
 # Exiba o valor final da `frase_completa`.
+frase_completa = ""
+frase_completa << "Aprendendo"
+frase_completa << " "
+frase_completa << 'Ruby'
+frase_completa << "!"
+puts frase_completa
 
 # 9° EXERCÍCIO: Comparação de Strings (Case Sensitive)
 # Crie duas variáveis de string: `texto1` com o valor "Programar" e `texto2` com o valor "programar".
