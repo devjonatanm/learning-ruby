@@ -112,6 +112,11 @@ puts frase_completa
 # Crie uma terceira variável `texto3` com o valor "Programar".
 # Compare se `texto1` é igual a `texto3` utilizando o operador `==`. Exiba o resultado.
 # Adicione um comentário explicando como o Ruby trata a comparação de strings em relação a maiúsculas e minúsculas.
+texto1 = "Programar"
+texto2 = "programar"
+puts texto1 == texto2
+texto3 = "Programar"
+puts texto1 == texto3 # o Ruby diferencia maiusculas e minusculas, chama-se isso de case-sensitive
 
 # 10° EXERCÍCIO: Tamanho de Strings (.length e .size)
 # Declare uma variável string chamada `mensagem_longa` com a frase:
@@ -119,3 +124,10 @@ puts frase_completa
 # Utilize o método `.length` para obter o número de caracteres na `mensagem_longa` e exiba o resultado.
 # Utilize o método `.size` para obter o tamanho da `mensagem_longa` e exiba o resultado.
 # Em um comentário, explique se há alguma diferença esperada entre `.length` e `.size` para strings em Ruby.
+mensagem_longa = <<TEXT 
+  "Esta é uma frase um pouco mais longa para testar o tamanho."
+TEXT
+puts mensagem_longa
+puts mensagem_longa.length
+puts mensagem_longa.size
+# `.length` e `.size` são equivalentes além de strings também em arrays
