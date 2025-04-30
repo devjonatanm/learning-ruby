@@ -6,11 +6,19 @@ filme = "O Poderoso Chefão"
 # d) Verifique se a string "Chefão" está incluída na variável 'filme'.
 # e) Converta o nome do filme para letras maiúsculas.
 # f) Converta o nome do filme para letras minúsculas.
+puts filme[0]
+puts filme[0,5]
+puts filme[-1]
+puts filme.include?("Chefão")
+puts filme.upcase
+puts filme.downcase
 
 # 2° EXERCÍCIO: Quebrando strings
 frase = "Ruby é uma linguagem poderosa"
 # a) Divida a frase em um array de palavras usando o espaço como delimitador.
 # b) Divida a frase em um array de caracteres.
+puts frase.split
+puts frase.split.join("-")
 
 # 3° EXERCÍCIO: Contagem de caracteres
 texto = "banana"
