@@ -57,6 +57,24 @@ end
 # Use um loop while para continuar pedindo um palpite até que o usuário acerte.
 # Dê dicas se o palpite é maior ou menor que o número secreto.
 # Conte o número de tentativas e mostre ao final.
+numero = rand(1..100)
+puts numero
+adinhaNumero = 0
+
+while adinhaNumero =! numero
+  puts "Advinhe um numero de 1 a 100: "
+  adinhaNumero = gets.chomp.to_i
+  puts "Hahah tente novamente"
+  if adinhaNumero < numero
+    puts "dica o numero é maior"
+  else
+    puts "dica o numero é manor"
+  end
+end
+
+if adinhaNumero =! numero
+  puts "parabens acertou !!"
+end
 
 # EXERCÍCIO 4: Lista de Compras Interativa
 # Baseado nos arquivos 11-while.rb e 12-for.rb:
