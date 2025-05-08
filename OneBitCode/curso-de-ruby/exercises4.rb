@@ -82,6 +82,19 @@ end
 # Use um loop while para permitir que o usuário adicione itens à lista.
 # O usuário deve digitar "fim" para parar de adicionar itens.
 # Após o loop, use o método .each para exibir todos os itens da lista de compras.
+shopping_list = []
+
+puts shopping_list
+acrescentar = ''
+while acrescentar != 'fim'
+  puts "digite algo para acrescentar a lista: "
+  acrescentar = gets.chomp
+  shopping_list.put(acrescentar)
+end
+
+shopping_list.each do |item|
+  puts item
+end
 
 # EXERCÍCIO 5: Contador de Vogais e Consoantes
 # Baseado no arquivo 12-for.rb (iterando sobre strings) e 10-case.rb:
